@@ -111,7 +111,7 @@
 
         });
 
-        var geojson = "https://gist.githubusercontent.com/aulichney/60c2c3b62487f2bee1b19e3b6b777daf/raw/48aa22fec79033aeb9a2974a0f9d65e797650110/new%2520counties.json";
+        var geojson = "https://gist.githubusercontent.com/aulichney/63f083a203020bc00cf7b9525183905b/raw/3ce712a26679831c7435ee5dff7efe2c62290ec6/nycounties.geojson";
 
         d3.json(geojson, function(json) {
 
@@ -154,7 +154,7 @@
 
         //change fill of each county upon new selection of variable
         function updateFill(selection, selected_dataset) {
-
+            console.log('selectioned', d_extent)
             var d_extent = d3.extent(selection.data(), function(d) {
                 return parseFloat(d.properties[selected_dataset]);
             });
