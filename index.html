@@ -111,8 +111,9 @@
 
         });
 
-        var geojson = "https://gist.githubusercontent.com/aulichney/63f083a203020bc00cf7b9525183905b/raw/3ce712a26679831c7435ee5dff7efe2c62290ec6/nycounties.geojson";
-
+        var geojson = //"https://gist.githubusercontent.com/aulichney/63f083a203020bc00cf7b9525183905b/raw/3ce712a26679831c7435ee5dff7efe2c62290ec6/nycounties.geojson";
+	    "https://gist.githubusercontent.com/EvanMisshula/7c606be96f62c078fea2fd67ef9e8a29/raw/581935b18798fa85f011480ea6e062a1cb132466/nys.json"
+      
         d3.json(geojson, function(json) {
 
             const tooltip = d3.select("body").append("div").attr("class", "d3-tooltip");
