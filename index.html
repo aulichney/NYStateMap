@@ -111,7 +111,8 @@
 
         });
 
-        var geojson = "https://gist.githubusercontent.com/aulichney/63f083a203020bc00cf7b9525183905b/raw/3ce712a26679831c7435ee5dff7efe2c62290ec6/nycounties.geojson";
+        //var geojson = "https://gist.githubusercontent.com/aulichney/63f083a203020bc00cf7b9525183905b/raw/357b94fde0d702318ee52c5d0d03308e6e2c9efd/output.geojson";
+        var geojson = "https://gist.githubusercontent.com/aulichney/e39466ea9781fb262b190fb943003738/raw/7d6b8df0df7d5dfb3dfb1a46bdea5f133992a5e1/output.geojson"
 
         d3.json(geojson, function(json) {
 
@@ -125,7 +126,7 @@
                       .enter()
                       .append("path")
                       .attr("d", path)
-                      .attr("stroke", "#808080")
+                      .attr("stroke", "#FFFFFF")
                       .attr("fill", "#b3b3b3")
                       .call(updateFill, selected_dataset)
                       .on('mouseover', function (d, i) {
